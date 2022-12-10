@@ -43,13 +43,13 @@ section {
   margin: auto;
 }
 .about,
-.services,
+.projects,
 .skills .contact,
 footer {
   font-family: "Poppins", sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.projects .serv-content,
 .skills .skills-content,
 .contact .contact-content {
   font-family: "Poppins", sans-serif;
@@ -306,39 +306,39 @@ section .title {
   background: none;
 }
 
-/* services section styling */
-.services,
+/* projects section styling */
+.projects,
 .teams {
   color: #587993;
   background: #222831;
   box-shadow: 0px 0px 15px #393e46;
 }
 
-.services .serv-content .card {
+.projects .serv-content .card {
   width: calc(33% - 20px);
-  
+  height: 350px;
   font-family: "Ubuntu", sans-serif;
   border-radius: 6px;
-  padding: 25px 15px;
+  padding: 35px  25px;
   cursor: pointer;
   box-shadow: rgba(159, 172, 170, 0.4) -5px 5px,
     rgba(159, 172, 170, 0.3) -10px 10px, rgba(159, 172, 170, 0.2) -15px 15px,
     rgba(159, 172, 170, 0.1) -20px 20px, rgba(159, 172, 170, 0.05) -25px 25px;
   transition: all 0.3s ease;
 }
-.services .serv-content .card:hover {
+.projects .serv-content .card:hover {
   background: #9facaa -5px 5px;
 }
-.services .serv-content .card .box {
+.projects .serv-content .card .box {
   transition: all 0.3s ease;
 }
-.services .serv-content .card .box img{
+.projects .serv-content .card .box img{
   width: 100%;
   border-radius: 6px;
   object-fit: cover;
   margin-bottom: 5px;
 }
-.services .serv-content .card .box a{
+.projects .serv-content .card .box a{
   display: inline-block;
   font-family: "poppins", sans-serif;
   background: #9facbe;
@@ -354,11 +354,11 @@ section .title {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.services .serv-content .card:hover .box {
+.projects .serv-content .card:hover .box {
   transform: scale(1.05);
 }
 
-.services .serv-content .card .text {
+.projects .serv-content .card .text {
   font-size: 25px;
   text-align: left;
   font-family: "Ubuntu", sans-serif;
@@ -435,16 +435,16 @@ section .title {
   width: 90%;
 }
 .skills-content .right .css::before {
-  width: 60%;
+  width: 70%;
+}
+.skills-content .right .boots::before {
+  width: 70%;
 }
 .skills-content .right .js::before {
-  width: 80%;
+  width: 60%;
 }
-.skills-content .right .php::before {
+.skills-content .right .rj::before {
   width: 50%;
-}
-.skills-content .right .mysql::before {
-  width: 70%;
 }
 
 /* contact section styling */
@@ -636,7 +636,7 @@ footer span a:hover {
   .about .about-content .right {
     flex: 100%;
   }
-  .services .serv-content .card {
+  .projects .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
@@ -660,7 +660,7 @@ footer span a:hover {
   .home .home-content a {
     font-size: 20px;
   }
-  .services .serv-content .card {
+  .projects .serv-content .card {
     width: 100%;
   }
 }
