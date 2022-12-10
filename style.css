@@ -252,11 +252,11 @@ section .title {
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
-  box-shadow: rgba(159, 152, 190, 0.174) 0px 2px 1px,
-    rgba(159, 152, 190, 0.235) 0px 4px 2px,
-    rgba(159, 152, 190, 0.461) 0px 8px 4px,
-    rgba(159, 152, 190, 0.461) 0px 16px 8px,
-    rgba(159, 152, 190, 0.441) 0px 32px 16px;
+  box-shadow: rgba(190, 152, 152, 0.174) 0px 2px 1px,
+    rgba(202, 49, 56, 0.235) 0px 4px 2px,
+    rgba(196, 91, 91, 0.461) 0px 8px 4px,
+    rgba(173, 40, 51, 0.461) 0px 16px 8px,
+    rgba(136, 30, 39, 0.441) 0px 32px 16px;
   transition: 0.6s;
 }
 .about .about-content .left img:hover {
@@ -313,13 +313,13 @@ section .title {
   background: #222831;
   box-shadow: 0px 0px 15px #393e46;
 }
+
 .services .serv-content .card {
   width: calc(33% - 20px);
-  background: #222;
+  
   font-family: "Ubuntu", sans-serif;
-  text-align: center;
   border-radius: 6px;
-  padding: 35px 25px;
+  padding: 25px 15px;
   cursor: pointer;
   box-shadow: rgba(159, 172, 170, 0.4) -5px 5px,
     rgba(159, 172, 170, 0.3) -10px 10px, rgba(159, 172, 170, 0.2) -15px 15px,
@@ -332,19 +332,35 @@ section .title {
 .services .serv-content .card .box {
   transition: all 0.3s ease;
 }
+.services .serv-content .card .box img{
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+.services .serv-content .card .box a{
+  display: inline-block;
+  font-family: "poppins", sans-serif;
+  background: #9facbe;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #9facbe;
+  transition: all 0.3s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
 .services .serv-content .card:hover .box {
   transform: scale(1.05);
 }
-.services .serv-content .card i {
-  font-size: 50px;
-  color: #9facbe;
-  transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i {
-  color: #587993;
-}
+
 .services .serv-content .card .text {
   font-size: 25px;
+  text-align: left;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   margin: 10px 0 7px 0;
